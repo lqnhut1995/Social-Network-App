@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileCell" customModule="ProjectMTB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7r-Yz-cJs">
+                    <rect key="frame" x="168.5" y="84" width="38.5" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="npK-LJ-YJK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-compact-camera-filled-100" translatesAutoresizingMaskIntoConstraints="NO" id="ZzQ-e3-wVk">
+                    <rect key="frame" x="150" y="15" width="75" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZzQ-e3-wVk" secondAttribute="height" multiplier="75:64" id="1W3-uH-bKH"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZzQ-e3-wVk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BQF-k5-DBO"/>
+                <constraint firstItem="ZzQ-e3-wVk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="VDi-un-18u"/>
+                <constraint firstItem="n7r-Yz-cJs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Y1a-dt-FDe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n7r-Yz-cJs" secondAttribute="bottom" constant="10" id="cFK-Kp-vTp"/>
+                <constraint firstItem="n7r-Yz-cJs" firstAttribute="top" secondItem="ZzQ-e3-wVk" secondAttribute="bottom" constant="5" id="pXo-PP-Q4V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageview" destination="ZzQ-e3-wVk" id="Fab-rj-nef"/>
+                <outlet property="userid" destination="n7r-Yz-cJs" id="htk-Lc-PIq"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8-compact-camera-filled-100" width="100" height="100"/>
+    </resources>
+</document>

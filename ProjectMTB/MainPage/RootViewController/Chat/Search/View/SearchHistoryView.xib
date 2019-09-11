@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchHistoryView" customModule="ProjectMTB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dil-Pn-VUD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utc-M8-CJH">
+                            <rect key="frame" x="25" y="11.5" width="311" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt3-aa-zP4">
+                            <rect key="frame" x="336" y="14.5" width="14" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="3pW-fw-WR0"/>
+                                <constraint firstAttribute="height" constant="14" id="pIT-aw-2hO"/>
+                            </constraints>
+                            <state key="normal" image="icons8-delete-64"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RR6-ZH-SPl">
+                            <rect key="frame" x="0.0" y="42.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="bVv-yu-NUk"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RR6-ZH-SPl" secondAttribute="trailing" id="932-em-6CJ"/>
+                        <constraint firstItem="yt3-aa-zP4" firstAttribute="centerY" secondItem="Utc-M8-CJH" secondAttribute="centerY" id="J3D-w9-E6d"/>
+                        <constraint firstItem="Utc-M8-CJH" firstAttribute="centerY" secondItem="dil-Pn-VUD" secondAttribute="centerY" id="LH1-HH-l0l"/>
+                        <constraint firstItem="Utc-M8-CJH" firstAttribute="leading" secondItem="dil-Pn-VUD" secondAttribute="leading" constant="25" id="Owu-b9-0SQ"/>
+                        <constraint firstAttribute="bottom" secondItem="RR6-ZH-SPl" secondAttribute="bottom" id="ZkT-PQ-Unu"/>
+                        <constraint firstItem="yt3-aa-zP4" firstAttribute="leading" secondItem="Utc-M8-CJH" secondAttribute="trailing" id="ppI-bq-buf"/>
+                        <constraint firstItem="RR6-ZH-SPl" firstAttribute="leading" secondItem="dil-Pn-VUD" secondAttribute="leading" id="wLE-V6-aF5"/>
+                        <constraint firstAttribute="trailing" secondItem="yt3-aa-zP4" secondAttribute="trailing" constant="25" id="xIa-k9-cyl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dil-Pn-VUD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0t0-jl-4m8"/>
+                <constraint firstItem="dil-Pn-VUD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QiG-UE-pgP"/>
+                <constraint firstAttribute="trailing" secondItem="dil-Pn-VUD" secondAttribute="trailing" id="k4V-Y6-1O0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dil-Pn-VUD" secondAttribute="bottom" id="p4n-Io-LHi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn" destination="yt3-aa-zP4" id="zdN-6X-1l2"/>
+                <outlet property="name" destination="Utc-M8-CJH" id="YCZ-Rh-ud1"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="130.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8-delete-64" width="64" height="64"/>
+    </resources>
+</document>

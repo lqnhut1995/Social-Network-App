@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3jr-81-tJM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Group Chat View Controller-->
+        <scene sceneID="33c-Pj-Drg">
+            <objects>
+                <viewController id="QF1-ax-ykP" customClass="GroupChatViewController" customModule="ProjectMTB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sy8-DE-39h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPY-DD-szQ">
+                                <rect key="frame" x="0.0" y="620" width="375" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiX-hj-mEP">
+                                        <rect key="frame" x="8" y="8" width="359" height="31"/>
+                                        <color key="backgroundColor" white="0.20166169520881441" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                        <state key="normal" title="Connect To People">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connect:" destination="QF1-ax-ykP" eventType="touchUpInside" id="PmM-7o-fgL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.83802625868055558" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="4WT-cE-qNR"/>
+                                    <constraint firstItem="RiX-hj-mEP" firstAttribute="top" secondItem="xPY-DD-szQ" secondAttribute="top" constant="8" id="6yL-wn-Gi1"/>
+                                    <constraint firstAttribute="trailing" secondItem="RiX-hj-mEP" secondAttribute="trailing" constant="8" id="cv4-9W-3bZ"/>
+                                    <constraint firstItem="RiX-hj-mEP" firstAttribute="leading" secondItem="xPY-DD-szQ" secondAttribute="leading" constant="8" id="mOR-uG-KQz"/>
+                                    <constraint firstAttribute="bottom" secondItem="RiX-hj-mEP" secondAttribute="bottom" constant="8" id="wpl-Jc-f0V"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xPY-DD-szQ" firstAttribute="bottom" secondItem="VgJ-nB-TPf" secondAttribute="bottom" id="AmV-lj-xA3"/>
+                            <constraint firstItem="xPY-DD-szQ" firstAttribute="leading" secondItem="VgJ-nB-TPf" secondAttribute="leading" id="RXs-ha-wEL"/>
+                            <constraint firstItem="xPY-DD-szQ" firstAttribute="trailing" secondItem="VgJ-nB-TPf" secondAttribute="trailing" id="n19-n2-jOF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VgJ-nB-TPf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tgy-ed-DWC">
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="stop" id="9uz-FD-Xbp">
+                                <connections>
+                                    <segue destination="zQH-Qh-4iK" kind="unwind" unwindAction="unwindToSMContentWithSegue:" id="ubh-Ys-Gwd"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Channel Name" id="nFo-Z4-hWN"/>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-menu-vertical-filled-23" id="3lO-Vh-lq5"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGc-I9-gDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zQH-Qh-4iK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="195.6521739130435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vxx-az-c3H">
+            <objects>
+                <navigationController storyboardIdentifier="groupchat" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3jr-81-tJM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VuB-m5-qyn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QF1-ax-ykP" kind="relationship" relationship="rootViewController" id="FQ2-yO-kNt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KV6-Fe-JPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="195.6521739130435"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-menu-vertical-filled-23" width="23" height="23"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>

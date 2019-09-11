@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMTitleMenuViewCell" customModule="ProjectMTB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-Vw-bbj">
+                    <rect key="frame" x="130" y="13.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="iuZ-o6-mu0"/>
+                        <constraint firstAttribute="height" constant="60" id="qdY-CF-FWT"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlH-ab-8Rz">
+                    <rect key="frame" x="176" y="56.5" width="27" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jG6-Ep-0gi">
+                            <rect key="frame" x="6.5" y="2.5" width="14.5" height="15"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.2156862745" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jG6-Ep-0gi" firstAttribute="centerX" secondItem="hlH-ab-8Rz" secondAttribute="centerX" id="7ZS-w7-s8A"/>
+                        <constraint firstAttribute="width" constant="27" id="Gqt-su-Bj3"/>
+                        <constraint firstItem="jG6-Ep-0gi" firstAttribute="centerX" secondItem="hlH-ab-8Rz" secondAttribute="centerX" id="NSR-Ps-fb2"/>
+                        <constraint firstItem="jG6-Ep-0gi" firstAttribute="centerY" secondItem="hlH-ab-8Rz" secondAttribute="centerY" id="fa4-gN-K1V"/>
+                        <constraint firstItem="jG6-Ep-0gi" firstAttribute="centerY" secondItem="hlH-ab-8Rz" secondAttribute="centerY" id="jHQ-tF-DGw"/>
+                        <constraint firstAttribute="height" constant="20" id="zew-e0-dbP"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJj-cm-s6J">
+                    <rect key="frame" x="130" y="34.5" width="60" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.86509874131944442" green="0.86295572916666663" blue="0.94634331597222221" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="e1Z-Vw-bbj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="36i-2J-J3p"/>
+                <constraint firstItem="hlH-ab-8Rz" firstAttribute="leading" secondItem="e1Z-Vw-bbj" secondAttribute="trailing" constant="-14" id="4VB-RO-RsX"/>
+                <constraint firstItem="CJj-cm-s6J" firstAttribute="leading" secondItem="e1Z-Vw-bbj" secondAttribute="leading" id="E0m-L6-xCt"/>
+                <constraint firstItem="CJj-cm-s6J" firstAttribute="centerY" secondItem="e1Z-Vw-bbj" secondAttribute="centerY" id="H0P-LV-4IC"/>
+                <constraint firstItem="hlH-ab-8Rz" firstAttribute="top" secondItem="e1Z-Vw-bbj" secondAttribute="bottom" constant="-17" id="e0e-FN-DV0"/>
+                <constraint firstItem="e1Z-Vw-bbj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tZS-Kz-OiK"/>
+                <constraint firstItem="CJj-cm-s6J" firstAttribute="width" secondItem="e1Z-Vw-bbj" secondAttribute="width" id="uNg-0O-wSi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageview" destination="e1Z-Vw-bbj" id="Zh6-gz-F7E"/>
+                <outlet property="name" destination="CJj-cm-s6J" id="OYq-cM-8Kb"/>
+                <outlet property="unreadView" destination="hlH-ab-8Rz" id="0lO-dc-2bo"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="310.5"/>
+        </view>
+    </objects>
+</document>

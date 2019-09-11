@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LKI-e9-fla">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice Chat View Controller-->
+        <scene sceneID="lze-MH-MPE">
+            <objects>
+                <viewController storyboardIdentifier="voicechat" id="LKI-e9-fla" customClass="VoiceChatViewController" customModule="ProjectMTB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eM9-eV-r1q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Papers.co-mz50-mountain-snow-sky-nature-iphone-plus-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="eJi-d2-zQn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RINGING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1V-t9-Kqq">
+                                <rect key="frame" x="153" y="92" width="68" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 22" translatesAutoresizingMaskIntoConstraints="NO" id="tNK-m6-3dY">
+                                <rect key="frame" x="150" y="127" width="75" height="78"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="bXI-r9-pZW"/>
+                                    <constraint firstAttribute="width" secondItem="tNK-m6-3dY" secondAttribute="height" multiplier="208:215" id="kyu-2c-cex"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tudou" translatesAutoresizingMaskIntoConstraints="NO" id="vmw-xV-VOZ">
+                                <rect key="frame" x="169" y="147" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vmw-xV-VOZ" secondAttribute="height" multiplier="1:1" id="xqo-sN-hCo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDf-RZ-Apk">
+                                <rect key="frame" x="70" y="565.5" width="30" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="15N-Cj-0MT"/>
+                                    <constraint firstAttribute="height" constant="33" id="d9z-S1-vfa"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="microphone-black-shape"/>
+                                <connections>
+                                    <action selector="microphone:" destination="LKI-e9-fla" eventType="touchUpInside" id="M33-gJ-Hrk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ6-bW-MMD">
+                                <rect key="frame" x="274" y="565.5" width="31" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Lm3-Zb-YNY"/>
+                                    <constraint firstAttribute="width" constant="31" id="mcp-cZ-60Q"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Icon-App-76x76"/>
+                                <connections>
+                                    <action selector="camera:" destination="LKI-e9-fla" eventType="touchUpInside" id="CEe-NW-vlr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJN-ay-jos">
+                                <rect key="frame" x="16" y="38" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EOY-10-rsb"/>
+                                    <constraint firstAttribute="width" constant="30" id="h2z-gj-NPf"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="icons8-delete-500"/>
+                                <connections>
+                                    <action selector="exit:" destination="LKI-e9-fla" eventType="touchUpInside" id="AJk-UD-ubZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13P-CD-QfV">
+                                <rect key="frame" x="153" y="547" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="SRN-XA-NIB"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.37821622170000002" blue="0.29672006820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button" image="telephone-symbol-button"/>
+                                <connections>
+                                    <action selector="stopcalling:" destination="LKI-e9-fla" eventType="touchUpInside" id="kIm-v1-1NR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-fL-TQS">
+                                <rect key="frame" x="115" y="224" width="144" height="37.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alina D’Souza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EN9-PY-Fq8">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nora Hunting Ground" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DS-Ra-kpS">
+                                        <rect key="frame" x="0.0" y="20" width="144" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O1V-t9-Kqq" firstAttribute="top" secondItem="hFV-bR-Fd6" secondAttribute="top" constant="72" id="3XN-jE-Y8G"/>
+                            <constraint firstItem="hFV-bR-Fd6" firstAttribute="bottom" secondItem="13P-CD-QfV" secondAttribute="bottom" constant="50" id="5ZW-ab-Lbm"/>
+                            <constraint firstItem="eJi-d2-zQn" firstAttribute="top" secondItem="eM9-eV-r1q" secondAttribute="top" id="Cql-KK-3FV"/>
+                            <constraint firstItem="BJN-ay-jos" firstAttribute="top" secondItem="hFV-bR-Fd6" secondAttribute="top" constant="18" id="Eo7-3p-oRw"/>
+                            <constraint firstItem="eJi-d2-zQn" firstAttribute="leading" secondItem="hFV-bR-Fd6" secondAttribute="leading" id="J48-pC-bzi"/>
+                            <constraint firstItem="kDf-RZ-Apk" firstAttribute="centerY" secondItem="13P-CD-QfV" secondAttribute="centerY" id="JON-xh-oVb"/>
+                            <constraint firstItem="tNK-m6-3dY" firstAttribute="centerX" secondItem="O1V-t9-Kqq" secondAttribute="centerX" id="LFw-25-QZc"/>
+                            <constraint firstItem="eJi-d2-zQn" firstAttribute="trailing" secondItem="hFV-bR-Fd6" secondAttribute="trailing" id="Rq7-rJ-NFm"/>
+                            <constraint firstItem="tNK-m6-3dY" firstAttribute="top" secondItem="O1V-t9-Kqq" secondAttribute="bottom" constant="8" id="Wks-c5-hXX"/>
+                            <constraint firstItem="kDf-RZ-Apk" firstAttribute="leading" secondItem="hFV-bR-Fd6" secondAttribute="leading" constant="70" id="cXb-Rw-Wv3"/>
+                            <constraint firstItem="ovz-fL-TQS" firstAttribute="top" secondItem="tNK-m6-3dY" secondAttribute="bottom" constant="19.5" id="dzA-rh-HC7"/>
+                            <constraint firstItem="vmw-xV-VOZ" firstAttribute="centerX" secondItem="ovz-fL-TQS" secondAttribute="centerX" id="eV9-rJ-y1i"/>
+                            <constraint firstItem="13P-CD-QfV" firstAttribute="width" secondItem="13P-CD-QfV" secondAttribute="height" multiplier="1:1" id="ee0-xr-LVd"/>
+                            <constraint firstItem="HZ6-bW-MMD" firstAttribute="centerY" secondItem="13P-CD-QfV" secondAttribute="centerY" id="fMV-i1-hmL"/>
+                            <constraint firstItem="BJN-ay-jos" firstAttribute="leading" secondItem="hFV-bR-Fd6" secondAttribute="leading" constant="16" id="g5k-Pp-kEz"/>
+                            <constraint firstItem="eJi-d2-zQn" firstAttribute="bottom" secondItem="hFV-bR-Fd6" secondAttribute="bottom" id="h8y-VI-0LN"/>
+                            <constraint firstItem="ovz-fL-TQS" firstAttribute="centerX" secondItem="eM9-eV-r1q" secondAttribute="centerX" id="kWP-ad-SZt"/>
+                            <constraint firstItem="13P-CD-QfV" firstAttribute="centerX" secondItem="eM9-eV-r1q" secondAttribute="centerX" id="pxc-Zn-AkT"/>
+                            <constraint firstItem="vmw-xV-VOZ" firstAttribute="centerY" secondItem="tNK-m6-3dY" secondAttribute="centerY" id="tYC-Pm-9KN"/>
+                            <constraint firstItem="O1V-t9-Kqq" firstAttribute="width" secondItem="O1V-t9-Kqq" secondAttribute="height" multiplier="48:19" id="tes-wi-iXJ"/>
+                            <constraint firstItem="hFV-bR-Fd6" firstAttribute="trailing" secondItem="HZ6-bW-MMD" secondAttribute="trailing" constant="70" id="vhG-ee-S61"/>
+                            <constraint firstItem="vmw-xV-VOZ" firstAttribute="top" secondItem="O1V-t9-Kqq" secondAttribute="bottom" constant="28" id="wF0-DG-gF0"/>
+                            <constraint firstItem="vmw-xV-VOZ" firstAttribute="centerX" secondItem="tNK-m6-3dY" secondAttribute="centerX" id="xXh-qc-Ngr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hFV-bR-Fd6"/>
+                    </view>
+                    <connections>
+                        <outlet property="callbtn" destination="13P-CD-QfV" id="sUS-Pc-SpF"/>
+                        <outlet property="imageview" destination="eJi-d2-zQn" id="lg7-AW-wTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CES-PC-lmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 22" width="718" height="718"/>
+        <image name="Icon-App-76x76" width="76" height="76"/>
+        <image name="Papers.co-mz50-mountain-snow-sky-nature-iphone-plus-wallpaper" width="1242" height="2208"/>
+        <image name="Tudou" width="256" height="256"/>
+        <image name="icons8-delete-500" width="500" height="500"/>
+        <image name="microphone-black-shape" width="256" height="256"/>
+        <image name="telephone-symbol-button" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="to7-D9-SbS" customClass="SkeletonViewCell" customModule="ProjectMTB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdj-N6-uIi">
+                    <rect key="frame" x="16" y="10" width="48" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="Qm2-Ka-t8R"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSI-X7-eJR">
+                    <rect key="frame" x="74" y="10" width="321" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="pSn-dV-mnz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ES9-ia-0su">
+                    <rect key="frame" x="74" y="28" width="321" height="25"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="M5h-aP-0eO" firstAttribute="bottom" secondItem="qdj-N6-uIi" secondAttribute="bottom" constant="10" id="3oS-py-yaZ"/>
+                <constraint firstItem="ES9-ia-0su" firstAttribute="bottom" secondItem="qdj-N6-uIi" secondAttribute="bottom" id="81i-Lo-JfV"/>
+                <constraint firstItem="ES9-ia-0su" firstAttribute="trailing" secondItem="TSI-X7-eJR" secondAttribute="trailing" id="8nv-P6-DMh"/>
+                <constraint firstItem="M5h-aP-0eO" firstAttribute="trailing" secondItem="TSI-X7-eJR" secondAttribute="trailing" constant="-20" id="CSI-zY-7Uc"/>
+                <constraint firstItem="TSI-X7-eJR" firstAttribute="leading" secondItem="qdj-N6-uIi" secondAttribute="trailing" constant="10" id="E5P-3X-qcg"/>
+                <constraint firstItem="qdj-N6-uIi" firstAttribute="leading" secondItem="M5h-aP-0eO" secondAttribute="leading" constant="16" id="IWO-zC-2qk"/>
+                <constraint firstItem="ES9-ia-0su" firstAttribute="top" secondItem="TSI-X7-eJR" secondAttribute="bottom" constant="4" id="QIb-hu-igy"/>
+                <constraint firstItem="ES9-ia-0su" firstAttribute="leading" secondItem="TSI-X7-eJR" secondAttribute="leading" id="i9Z-B2-P3k"/>
+                <constraint firstItem="qdj-N6-uIi" firstAttribute="top" secondItem="M5h-aP-0eO" secondAttribute="top" constant="10" id="pMm-uL-lcW"/>
+                <constraint firstItem="TSI-X7-eJR" firstAttribute="top" secondItem="qdj-N6-uIi" secondAttribute="top" id="scM-Nl-Pki"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="M5h-aP-0eO"/>
+            <connections>
+                <outlet property="uiview1" destination="qdj-N6-uIi" id="nYZ-EH-rHO"/>
+                <outlet property="uiview2" destination="TSI-X7-eJR" id="9Ru-s7-4gP"/>
+                <outlet property="uiview3" destination="ES9-ia-0su" id="dez-jT-jJX"/>
+            </connections>
+            <point key="canvasLocation" x="8.5" y="334.5"/>
+        </view>
+    </objects>
+</document>

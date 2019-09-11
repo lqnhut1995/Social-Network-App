@@ -1,0 +1,163 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
+  - Cache (4.2.0)
+  - ColorPickerRow (1.2.1):
+    - Eureka (>= 3.0.0)
+    - UIColor_Hex_Swift (>= 3.0.0)
+  - Device (3.1.0)
+  - DKImagePickerController (3.8.1):
+    - DKImagePickerController/Camera (= 3.8.1)
+    - DKImagePickerController/ImageManager (= 3.8.1)
+  - DKImagePickerController/Camera (3.8.1)
+  - DKImagePickerController/ImageManager (3.8.1)
+  - Eureka (4.2.0)
+  - Hero (1.3.0)
+  - Hue (3.0.1)
+  - Imaginary (3.0.3):
+    - Cache (~> 4.0)
+  - IQKeyboardManagerSwift (6.1.1)
+  - Kingfisher (4.8.1)
+  - KRActivityIndicatorView (2.1.2)
+  - KRProgressHUD (3.2.2):
+    - KRActivityIndicatorView (= 2.1.2)
+  - LGSideMenuController (2.1.1)
+  - Lightbox (2.1.2):
+    - Hue (~> 3.0)
+    - Imaginary (~> 3.0)
+  - LinearProgressBar (1.0.1)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - ObjectMapper (3.3.0)
+  - PagingKit (1.5.4)
+  - QuickLayout (2.0.2)
+  - Sheeeeeeeeet (0.9.5)
+  - SkeletonView (1.4)
+  - SkyFloatingLabelTextField (3.5.2)
+  - Socket.IO-Client-Swift (13.3.0):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
+  - SwiftEntryKit (0.5.9):
+    - QuickLayout (= 2.0.2)
+  - SwiftLinkPreview (2.3.0)
+  - TLPhotoPicker (1.7.2)
+  - UIColor_Hex_Swift (4.0.2)
+  - Validator (3.0.2)
+  - XLActionController (4.0.1):
+    - XLActionController/Core (= 4.0.1)
+  - XLActionController/Core (4.0.1)
+  - XLActionController/Skype (4.0.1):
+    - XLActionController/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireObjectMapper
+  - ColorPickerRow (from `https://github.com/EurekaCommunity/ColorPickerRow`)
+  - Device
+  - DKImagePickerController
+  - Eureka
+  - Hero
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 4.0)
+  - KRProgressHUD
+  - LGSideMenuController
+  - Lightbox
+  - LinearProgressBar
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - PagingKit
+  - Sheeeeeeeeet
+  - SkeletonView
+  - SkyFloatingLabelTextField
+  - Socket.IO-Client-Swift
+  - SwiftEntryKit
+  - SwiftLinkPreview
+  - TLPhotoPicker
+  - UIColor_Hex_Swift
+  - Validator
+  - XLActionController
+  - XLActionController/Skype
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Cache
+    - Device
+    - DKImagePickerController
+    - Eureka
+    - Hero
+    - Hue
+    - Imaginary
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - LGSideMenuController
+    - Lightbox
+    - LinearProgressBar
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - PagingKit
+    - QuickLayout
+    - Sheeeeeeeeet
+    - SkeletonView
+    - SkyFloatingLabelTextField
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftEntryKit
+    - SwiftLinkPreview
+    - TLPhotoPicker
+    - UIColor_Hex_Swift
+    - Validator
+    - XLActionController
+
+EXTERNAL SOURCES:
+  ColorPickerRow:
+    :git: https://github.com/EurekaCommunity/ColorPickerRow
+
+CHECKOUT OPTIONS:
+  ColorPickerRow:
+    :commit: 3c1be59fb9be7f6d81c985d2837b6d31e66889c5
+    :git: https://github.com/EurekaCommunity/ColorPickerRow
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
+  Cache: f28f8dd64b632155aabf9b3906b036a659048251
+  ColorPickerRow: 87dd091c54fff65cf554f79ca1556312ee66282f
+  Device: 8a21a61f5f938a12dadd44d82287996081b6919b
+  DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
+  Eureka: 0748c7bbb2560130e43c7bfa83e99c98854a1f42
+  Hero: 3eecd3fd62dd2425cbc7e35505c557b86d5a379e
+  Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
+  Imaginary: 9b45836a5af881f452a86e0a1215772ae4712d00
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  KRActivityIndicatorView: 27e7a7e3da7fbc8e5405fbc4088b51cc2095a410
+  KRProgressHUD: 8872da74b1c462e15c82a8fff250a2d34ee82ea2
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  Lightbox: 2dc267df8be2285bc7724cb11cbbf4aaaf59dced
+  LinearProgressBar: f6a74dbabed229dbb1a7978089e2e4317a3a0ee0
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  PagingKit: e2cc3e889a39948621a3d1d9d68961d398794cfe
+  QuickLayout: a730730b646b231fd4ef7cffaeb1e81fe0e1ca92
+  Sheeeeeeeeet: e7a54ed2007d12b5b3b5d2fa5b98ce9b994ca335
+  SkeletonView: 50f7a9b04e3a62bd0ae964859c19317fabaea367
+  SkyFloatingLabelTextField: f0672b67cd0e86abda946c0dc3b2fe8580767dbb
+  Socket.IO-Client-Swift: 0afb192a562db90d50e3f7f7421c06925a3f0179
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  SwiftEntryKit: 97555549a9d1be703a55d9e5e10e9b5c3ed29d99
+  SwiftLinkPreview: 6c9c37215a1310f2bb9ad74fdbe310b3e81556ac
+  TLPhotoPicker: 5008b848b6a136c124daff3858967a08a6d0c9b8
+  UIColor_Hex_Swift: 2fb123c7d864994a5137ef57c4dc55e17a657d29
+  Validator: bf211c1d71b3f910d230c09c70e62429d0fef63a
+  XLActionController: 007868251c0eed70d649d06c1625259b73b3a600
+
+PODFILE CHECKSUM: c16f38e36e210644a4f77414ddbe132c220ec631
+
+COCOAPODS: 1.5.2

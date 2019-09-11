@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EYp-fy-WQh" customClass="FileTypeCell" customModule="ProjectMTB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iv2-ME-bU0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-video-file-100" translatesAutoresizingMaskIntoConstraints="NO" id="Qve-Sk-MNv">
+                            <rect key="frame" x="-1" y="0.0" width="39" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="0nM-iv-Ra7"/>
+                                <constraint firstAttribute="width" constant="39" id="sRx-Bg-i60"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moi-KL-kcx">
+                            <rect key="frame" x="46" y="0.0" width="321" height="25.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" white="0.31581250160000002" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCF-9g-vxX">
+                            <rect key="frame" x="46" y="20.5" width="321" height="15.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <color key="textColor" white="0.32000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RCF-9g-vxX" secondAttribute="trailing" constant="8" id="44o-2b-5jV"/>
+                        <constraint firstItem="RCF-9g-vxX" firstAttribute="bottom" secondItem="Qve-Sk-MNv" secondAttribute="bottom" constant="-5" id="468-fN-Uhx"/>
+                        <constraint firstItem="moi-KL-kcx" firstAttribute="top" secondItem="Qve-Sk-MNv" secondAttribute="top" id="Ie3-px-J6i"/>
+                        <constraint firstItem="Qve-Sk-MNv" firstAttribute="leading" secondItem="Iv2-ME-bU0" secondAttribute="leading" constant="-1" id="M8p-1D-COC"/>
+                        <constraint firstAttribute="trailing" secondItem="moi-KL-kcx" secondAttribute="trailing" constant="8" id="Psc-fY-cRR"/>
+                        <constraint firstItem="RCF-9g-vxX" firstAttribute="top" secondItem="moi-KL-kcx" secondAttribute="bottom" constant="-5" id="cha-no-TOE"/>
+                        <constraint firstItem="RCF-9g-vxX" firstAttribute="leading" secondItem="moi-KL-kcx" secondAttribute="leading" id="klq-ef-VB6"/>
+                        <constraint firstItem="Qve-Sk-MNv" firstAttribute="centerY" secondItem="Iv2-ME-bU0" secondAttribute="centerY" id="pEB-8Q-oj3"/>
+                        <constraint firstItem="moi-KL-kcx" firstAttribute="leading" secondItem="Qve-Sk-MNv" secondAttribute="trailing" constant="8" id="xTB-mx-mCZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Iv2-ME-bU0" secondAttribute="bottom" id="B9d-fr-VKN"/>
+                <constraint firstItem="1Iy-P0-vmh" firstAttribute="trailing" secondItem="Iv2-ME-bU0" secondAttribute="trailing" id="LqN-Yb-4nu"/>
+                <constraint firstItem="Iv2-ME-bU0" firstAttribute="leading" secondItem="1Iy-P0-vmh" secondAttribute="leading" id="UUF-ED-hRK"/>
+                <constraint firstItem="Iv2-ME-bU0" firstAttribute="top" secondItem="EYp-fy-WQh" secondAttribute="top" id="pan-Mo-1xs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1Iy-P0-vmh"/>
+            <connections>
+                <outlet property="name" destination="moi-KL-kcx" id="Qn1-rY-zRK"/>
+                <outlet property="size" destination="RCF-9g-vxX" id="3dv-1Y-Hco"/>
+                <outlet property="uiview" destination="Iv2-ME-bU0" id="Tg2-5P-gQo"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="458.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8-video-file-100" width="100" height="100"/>
+    </resources>
+</document>

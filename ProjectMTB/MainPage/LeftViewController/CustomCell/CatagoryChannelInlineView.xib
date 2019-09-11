@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SubCatagoryChannelCell" customModule="ProjectMTB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNJ-Xz-ioU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catagory's Channel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iU-aa-xbV">
+                            <rect key="frame" x="8" y="8" width="359" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Catagory's Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5WZ-ff-1IT">
+                            <rect key="frame" x="10" y="39" width="357" height="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.2274509804" green="0.82352941180000006" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5WZ-ff-1IT" secondAttribute="trailing" constant="8" id="04U-xI-8ab"/>
+                        <constraint firstItem="8iU-aa-xbV" firstAttribute="top" secondItem="ZNJ-Xz-ioU" secondAttribute="top" constant="8" id="Blf-1N-S0u"/>
+                        <constraint firstAttribute="height" constant="71" id="bse-dB-dQA"/>
+                        <constraint firstAttribute="trailing" secondItem="8iU-aa-xbV" secondAttribute="trailing" constant="8" id="exh-QQ-SoV"/>
+                        <constraint firstItem="5WZ-ff-1IT" firstAttribute="top" secondItem="8iU-aa-xbV" secondAttribute="bottom" constant="10" id="o4y-39-2Ed"/>
+                        <constraint firstItem="8iU-aa-xbV" firstAttribute="leading" secondItem="ZNJ-Xz-ioU" secondAttribute="leading" constant="8" id="ta0-iA-WjJ"/>
+                        <constraint firstItem="5WZ-ff-1IT" firstAttribute="leading" secondItem="ZNJ-Xz-ioU" secondAttribute="leading" constant="10" id="yAA-eX-7TH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5I-hz-46t">
+                    <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.41176470590000003" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2W1-re-Nif"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Delete This"/>
+                    <connections>
+                        <action selector="deletecalled:" destination="iN0-l3-epB" eventType="touchUpInside" id="K26-6r-vaH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="a5I-hz-46t" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="A3a-PK-CtH"/>
+                <constraint firstItem="ZNJ-Xz-ioU" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Lsz-SW-trY"/>
+                <constraint firstItem="ZNJ-Xz-ioU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nx5-qu-5vl"/>
+                <constraint firstItem="a5I-hz-46t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="P4m-C2-ac4"/>
+                <constraint firstItem="ZNJ-Xz-ioU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eVB-W7-L8h"/>
+                <constraint firstItem="a5I-hz-46t" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xpq-Ph-Mm8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="name" destination="5WZ-ff-1IT" id="kBB-1k-C0x"/>
+                <outlet property="rowTitle" destination="8iU-aa-xbV" id="owj-Tb-y1H"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="360.5"/>
+        </view>
+    </objects>
+</document>
